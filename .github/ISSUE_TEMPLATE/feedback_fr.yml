@@ -1,0 +1,70 @@
+{
+  "name": "Français — avis, bug ou traduction",
+  "description": "Signaler un problème, proposer une amélioration ou corriger une traduction.",
+  "title": "[fr] ",
+  "body": [
+    {
+      "type": "dropdown",
+      "id": "kind",
+      "attributes": {
+        "label": "Quel type de retour ?",
+        "options": [
+          "Bug",
+          "Estimation de batterie ou consommation",
+          "Traduction",
+          "Idée de fonctionnalité",
+          "Autre avis"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "environment",
+      "attributes": {
+        "label": "Ton Mac et Akku",
+        "description": "Modèle/puce (M1–M5), version de macOS, version et langue d’Akku. Pas de numéro de série."
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "details",
+      "attributes": {
+        "label": "Que s’est-il passé ou que faudrait-il améliorer ?",
+        "description": "Indique étapes et résultats attendu/réel. Pour traduire : écran, texte actuel et proposition."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "power",
+      "attributes": {
+        "label": "Alimentation et contexte",
+        "description": "Chargeur branché, économie d’énergie ou écran externe ? Ajoute seulement le contexte utile."
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "privacy",
+      "attributes": {
+        "label": "Confidentialité",
+        "options": [
+          {
+            "label": "J’ai retiré données personnelles, adresses, coordonnées et secrets du texte et des pièces jointes.",
+            "required": true
+          }
+        ]
+      }
+    }
+  ]
+}

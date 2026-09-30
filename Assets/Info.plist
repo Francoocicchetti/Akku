@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Akku</string>
+	<key>CFBundleExecutable</key>
+	<string>Akku</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.batterytrip.mac</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+		<string>es</string>
+		<string>fr</string>
+		<string>zh-Hans</string>
+		<string>de</string>
+		<string>pt-BR</string>
+	</array>
+	<key>CFBundleName</key>
+	<string>Akku</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>7.1.1</string>
+	<key>CFBundleVersion</key>
+	<string>11</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>13.0</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>Akku</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Akku uses your location to learn frequent places, show distance from home and help plan charging. Place coordinates remain on this Mac. You can turn detection off in Settings.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Akku uses your location to learn frequent places, show distance from home and help plan charging. Place coordinates remain on this Mac. You can turn detection off in Settings.</string>
+</dict>
+</plist>

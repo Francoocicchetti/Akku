@@ -1,0 +1,70 @@
+{
+  "name": "Português — feedback, falha ou tradução",
+  "description": "Relate um problema, proponha melhorias ou corrija uma tradução.",
+  "title": "[pt-BR] ",
+  "body": [
+    {
+      "type": "dropdown",
+      "id": "kind",
+      "attributes": {
+        "label": "Qual é o tipo de feedback?",
+        "options": [
+          "Falha",
+          "Estimativa de bateria ou consumo",
+          "Tradução",
+          "Ideia de função",
+          "Outro comentário"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "environment",
+      "attributes": {
+        "label": "Seu Mac e Akku",
+        "description": "Modelo/chip (M1–M5), versão do macOS, versão e idioma do Akku. Sem número de série."
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "details",
+      "attributes": {
+        "label": "O que aconteceu ou o que você melhoraria?",
+        "description": "Inclua passos e resultados esperado/real. Para tradução: tela, texto atual e sugestão."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "power",
+      "attributes": {
+        "label": "Energia e contexto",
+        "description": "Carregador conectado, Pouca Energia ou tela externa? Inclua apenas o contexto relevante."
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "privacy",
+      "attributes": {
+        "label": "Privacidade",
+        "options": [
+          {
+            "label": "Removi dados pessoais, endereços, coordenadas e segredos do texto e dos anexos.",
+            "required": true
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "name": "Español — feedback, falla o traducción",
+  "description": "Cuenta un problema, propone una mejora o corrige una traducción.",
+  "title": "[es] ",
+  "body": [
+    {
+      "type": "dropdown",
+      "id": "kind",
+      "attributes": {
+        "label": "¿Qué tipo de comentario es?",
+        "options": [
+          "Falla",
+          "Estimación de batería o consumo",
+          "Traducción",
+          "Idea de función",
+          "Otro comentario"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "environment",
+      "attributes": {
+        "label": "Tu Mac y Akku",
+        "description": "Modelo/chip (M1–M5), versión de macOS, versión e idioma de Akku. Sin número de serie."
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "details",
+      "attributes": {
+        "label": "¿Qué pasó o qué mejorarías?",
+        "description": "Incluye pasos, resultado esperado y real. Para traducciones: pantalla, texto actual y propuesta."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "power",
+      "attributes": {
+        "label": "Energía y contexto",
+        "description": "¿Había cargador, Bajo consumo o pantalla externa? Agrega solo contexto relevante."
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "privacy",
+      "attributes": {
+        "label": "Privacidad",
+        "options": [
+          {
+            "label": "Quité datos personales, direcciones, coordenadas y secretos del texto y los archivos adjuntos.",
+            "required": true
+          }
+        ]
+      }
+    }
+  ]
+}

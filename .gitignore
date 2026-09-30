@@ -1,0 +1,22 @@
+.build/
+dist/
+.DS_Store
+*.xcuserstate
+*.dSYM/
+*.app/
+*.zip
+.env
+.env.*
+*.p12
+*.p8
+*.mobileprovision
+*credentials*
+# Personal runtime data and local exports never belong in the repository.
+BatteryTrip
+learning-v*.json
+automatic-v*.json
+home.json
+places*.json
+battery-history*.json
+outcomes*.json
+MEDICIONES-ENERGIA.json

@@ -1,0 +1,70 @@
+{
+  "name": "Deutsch — Feedback, Fehler oder Übersetzung",
+  "description": "Problem melden, Verbesserung vorschlagen oder Übersetzung korrigieren.",
+  "title": "[de] ",
+  "body": [
+    {
+      "type": "dropdown",
+      "id": "kind",
+      "attributes": {
+        "label": "Welche Art von Rückmeldung?",
+        "options": [
+          "Fehler",
+          "Batterieschätzung oder Verbrauch",
+          "Übersetzung",
+          "Funktionsidee",
+          "Sonstiges Feedback"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "environment",
+      "attributes": {
+        "label": "Dein Mac und Akku",
+        "description": "Modell/Chip (M1–M5), macOS-Version, Akku-Version und Sprache. Keine Seriennummer."
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "details",
+      "attributes": {
+        "label": "Was ist passiert oder was sollte besser werden?",
+        "description": "Schritte, erwartetes und tatsächliches Ergebnis. Bei Übersetzungen: Bildschirm, aktueller Text und Vorschlag."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "power",
+      "attributes": {
+        "label": "Stromversorgung und Kontext",
+        "description": "Ladegerät, Stromsparmodus oder externer Bildschirm? Nur relevante Angaben ergänzen."
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "privacy",
+      "attributes": {
+        "label": "Datenschutz",
+        "options": [
+          {
+            "label": "Ich habe persönliche Daten, Adressen, Koordinaten und Geheimnisse aus Text und Anhängen entfernt.",
+            "required": true
+          }
+        ]
+      }
+    }
+  ]
+}
